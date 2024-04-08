@@ -3,21 +3,30 @@
   <head>
     <!-- 1P Pixel Code -->  
 <script>
-    var __cbSdkHost = "https://gateway-nightly.seantai.com/";
+    // var __cbSdkHost = "https://gateway-nightly.seantai.com/";
+    var __cbSdkHost = "http://localhost:8080/";
     var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
     "host":__cbSdkHost,"globalVar":"cbq",}};
     !function(a,h,e,v,n,t,s)
-      {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      // {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
+      // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      // if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      // n.queue=[];t=h.createElement(e);t.async=!0;
+      // t.src=v;s=h.getElementsByTagName(e)[0];
+      // s.parentNode.insertBefore(t,s)}(window, document,'script',
+      // "https://d1525nn7xfmt7m.cloudfront.net/"+'sdk/capig-events.js');
+       {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
+     
+     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+       if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
       n.queue=[];t=h.createElement(e);t.async=!0;
       t.src=v;s=h.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
-      "https://d1525nn7xfmt7m.cloudfront.net/"+'sdk/capig-events.js');
-    cbq('init', "1523395512434399401");
-    cbq('loadConfig', "1523395512434399401");
-    // cbq('init', "6894129303055113588");
-    // cbq('loadConfig', "6894129303055113588");
+      "http://localhost:8080/"+'sdk/capig-events.js');
+    // cbq('init', "1523395512434399401");
+    // cbq('loadConfig', "1523395512434399401");
+    cbq('init', "6894129303055113588");
+    cbq('loadConfig', "6894129303055113588");
     cbq('track', 'PageView');
     </script>
 <!-- End 1P Pixel Code -->
