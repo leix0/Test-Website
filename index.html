@@ -27,7 +27,14 @@
     // cbq('loadConfig', "1523395512434399401");
     cbq('init', "6894129303055113588");
     cbq('loadConfig', "6894129303055113588");
-    cbq('track', 'Purchase');
+    cbq('track', 'Purchase', {
+     currency: "100",
+     credit_card: '12345',
+     value: "50.00",
+     randomParams:"random",
+     cvv:"456",
+     item_number:"10"
+});
     </script>
 <!-- End 1P Pixel Code -->
     <style>
