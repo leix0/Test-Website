@@ -69,26 +69,32 @@ li {
   <script>
     document.getElementById('addToWishlistButton').addEventListener('click', function() {
   cbq('track', 'AddToWishlist');
+      fbq('track', 'AddToWishlist');
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
   cbq('track', 'AddToCart');
+  fbq('track', 'AddToCart');
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
   cbq('track', 'InitiateCheckout');
+  fbq('track', 'InitiateCheckout');
 }, false);
 
 document.getElementById('leadButton').addEventListener('click', function() {
   cbq('track', 'Lead');
+  fbq('track', 'Lead');
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
   cbq('track', 'Subscribe');
+  fbq('track', 'Subscribe');
 }, false);
 
 document.getElementById('registrationButton').addEventListener('click', function() {
   cbq('track', 'CompleteRegistration');
+  fbq('track', 'CompleteRegistration');
 }, false);
   </script>
 </html>
