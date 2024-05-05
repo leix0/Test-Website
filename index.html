@@ -2,7 +2,23 @@
 <html>
   <head>
     <!-- 1P Pixel Code -->  
-<script>
+    <script>
+    var __cbSdkHost = "https://sdk.leowu.uk/";
+    var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
+    "host":__cbSdkHost,"globalVar":"cbq",}};
+    !function(a,h,e,v,n,t,s)
+      {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=h.createElement(e);t.async=!0;
+      t.src=v;s=h.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      "https://d12k6b4q8votne.cloudfront.net/"+'sdk/capig-events.js');
+    cbq('init', "6719614145299179350");
+    cbq('loadConfig', "6719614145299179350");
+    cbq('track', 'PageView');
+    </script>
+<!-- <script>
     var __cbSdkHost = "http://localhost:8080/";
     var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
     "host":__cbSdkHost,"globalVar":"cbq",}};
@@ -17,7 +33,7 @@
     cbq('init', "d96550a7-f974-4770-8118-ffd660072599");
     cbq('loadConfig', "d96550a7-f974-4770-8118-ffd660072599");
     cbq('track', 'PageView');
-    </script>
+    </script> -->
 <!-- End 1P Pixel Code -->
 <!-- Meta Pixel Code -->
 <!-- <script>
