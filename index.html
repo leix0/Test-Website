@@ -1,24 +1,23 @@
 <!doctype html>
 <html>
   <head>
-<!-- <script>
-    var __cbSdkHost = "https://sdk.leowu.uk/";
-    var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
-    "host":__cbSdkHost,"globalVar":"cbq",}};
-    !function(a,h,e,v,n,t,s)
-      {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=h.createElement(e);t.async=!0;
-      t.src=v;s=h.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      "https://sdk.leowu.uk/"+'sdk/capig-events.js');
-    cbq('init', "946549274105177723");
-    cbq('loadConfig', "946549274105177723");
-    cbq('track', 'PageView');
-</script> -->
-    <!-- Signals Gateway Pixel Code -->
+<!-- Signals Gateway Pixel Code -->
   <script>
+  !function(a,h,e,v,n,t,s)
+    {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=h.createElement(e);t.async=!0;
+    t.src=v;s=h.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://sdk.leowu.uk/sdk/4982825989230721391/events.js');
+    cbq('setHost', 'https://sdk.leowu.uk/');
+    cbq('init', '4982825989230721391');
+    cbq('track', 'PageView');
+  </script>
+    <!-- End Signals Gateway Pixel Code -->
+    <!-- Signals Gateway Pixel Code -->
+<!--   <script>
   !function(a,h,e,v,n,t,s)
     {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -30,7 +29,7 @@
     cbq('setHost', 'http://localhost:8080/');
     cbq('init', '6837955319335129376');
     cbq('track', 'PageView');
-  </script>
+  </script> -->
     <!-- End Signals Gateway Pixel Code -->
 <!-- <script>
     var __cbSdkHost = "http://localhost:8080/";
@@ -145,7 +144,7 @@ document.getElementById('customEventButton').addEventListener('click', function(
       redirect: "follow"
     };
     
-    fetch("http://localhost:8080/sdk/6837955319335129376/iwl.js/", requestOptions)
+    fetch("https://sdk.leowu.uk/sdk/4982825989230721391/iwl.js/", requestOptions)
       .then((response) => response.text())
       .then((result) => {
         console.log(result);
