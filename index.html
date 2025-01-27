@@ -136,18 +136,36 @@ document.getElementById('customEventButton').addEventListener('click', function(
 }, false);
   </script>
   <script>
+    const myHeaders = new Headers();
+    myHeaders.append("token", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MzgwMDM3OTIsImFjY2Vzc2VzIjpbIkVTVFNldHVwQWNjZXNzIl0sImlhdCI6MTczODAwMTk5Mn0.qUR-wIuh355AGsIITLhlrHPx73R1n8kjLsv4sPHE_vQ");
+    
+    const requestOptions = {
+      method: "GET",
+      headers: myHeaders,
+      redirect: "follow"
+    };
+    
+    fetch("http://localhost:8080/sdk/6837955319335129376/iwl.js", requestOptions)
+      .then((response) => response.text())
+      .then((result) => {
+        console.log(result);
+        script.textContent = scriptText;
+        document.body.appendChild(script);
+      })
+      .catch((error) => console.error(error));
+    
     const script = document.createElement('script');
     script.async = true;
     
-  fetch('http://localhost:8080/sdk/6837955319335129376/script.js', {
-    headers: {
-      token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MzgwMDM3OTIsImFjY2Vzc2VzIjpbIkVTVFNldHVwQWNjZXNzIl0sImlhdCI6MTczODAwMTk5Mn0.qUR-wIuh355AGsIITLhlrHPx73R1n8kjLsv4sPHE_vQ'
-    }
-  })
-  .then(response => response.text())
-  .then(scriptText => {
-    script.textContent = scriptText;
-    document.body.appendChild(script);
-  });
+  // fetch('http://localhost:8080/sdk/6837955319335129376/script.js', {
+  //   headers: {
+  //     token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MzgwMDM3OTIsImFjY2Vzc2VzIjpbIkVTVFNldHVwQWNjZXNzIl0sImlhdCI6MTczODAwMTk5Mn0.qUR-wIuh355AGsIITLhlrHPx73R1n8kjLsv4sPHE_vQ'
+  //   }
+  // })
+  // .then(response => response.text())
+  // .then(scriptText => {
+  //   script.textContent = scriptText;
+  //   document.body.appendChild(script);
+  // });
   </script>
 </html>
