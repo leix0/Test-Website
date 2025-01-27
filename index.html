@@ -145,7 +145,7 @@ document.getElementById('customEventButton').addEventListener('click', function(
       redirect: "follow"
     };
     
-    fetch("http://localhost:8080/sdk/6837955319335129376/iwl.js", requestOptions)
+    fetch("http://localhost:8080/sdk/6837955319335129376/iwl.js/", requestOptions)
       .then((response) => response.text())
       .then((result) => {
         console.log(result);
