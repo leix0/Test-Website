@@ -134,27 +134,27 @@ document.getElementById('customEventButton').addEventListener('click', function(
   fbq('track', customEventName);
 }, false);
   </script>
-  <script>
-    const myHeaders = new Headers();
-    myHeaders.append("token", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MzgwMjEyMDEsImFjY2Vzc2VzIjpbIkVTVFNldHVwQWNjZXNzIl0sImlhdCI6MTczODAxOTQwMX0.z55eHs3HYazeqzQcjYgcU3gI2bqzaQNvmHsbcpflJ5A");
+<!--   <script> -->
+    // const myHeaders = new Headers();
+    // myHeaders.append("token", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3MzgwMjEyMDEsImFjY2Vzc2VzIjpbIkVTVFNldHVwQWNjZXNzIl0sImlhdCI6MTczODAxOTQwMX0.z55eHs3HYazeqzQcjYgcU3gI2bqzaQNvmHsbcpflJ5A");
     
-    const requestOptions = {
-      method: "GET",
-      headers: myHeaders,
-      redirect: "follow"
-    };
+    // const requestOptions = {
+    //   method: "GET",
+    //   headers: myHeaders,
+    //   redirect: "follow"
+    // };
     
-    fetch("https://sdk.leowu.uk/sdk/4982825989230721391/iwl.js/", requestOptions)
-      .then((response) => response.text())
-      .then((result) => {
-        console.log(result);
-        script.textContent = scriptText;
-        document.body.appendChild(script);
-      })
-      .catch((error) => console.error(error));
+    // fetch("https://sdk.leowu.uk/sdk/4982825989230721391/iwl.js/", requestOptions)
+    //   .then((response) => response.text())
+    //   .then((result) => {
+    //     console.log(result);
+    //     script.textContent = scriptText;
+    //     document.body.appendChild(script);
+    //   })
+    //   .catch((error) => console.error(error));
     
-    const script = document.createElement('script');
-    script.async = true;
+    // const script = document.createElement('script');
+    // script.async = true;
     
   // fetch('http://localhost:8080/sdk/6837955319335129376/script.js', {
   //   headers: {
@@ -166,5 +166,5 @@ document.getElementById('customEventButton').addEventListener('click', function(
   //   script.textContent = scriptText;
   //   document.body.appendChild(script);
   // });
-  </script>
+<!--   </script> -->
 </html>
