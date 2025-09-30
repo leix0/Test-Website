@@ -1,55 +1,8 @@
 <!doctype html>
 <html>
   <head>
-<!-- Signals Gateway Pixel Code -->
-  <script>
-  !function(a,h,e,v,n,t,s)
-    {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=h.createElement(e);t.async=!0;
-    t.src=v;s=h.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://dubk66gdk0qo2.cloudfront.net/sdk/8769670126070004161/events.js');
-    cbq('setHost', 'https://upbdev-routing.donutnow.com/');
-    cbq('init', '8769670126070004161');
-    cbq('track', 'PageView');
-  </script>
-    <!-- End Signals Gateway Pixel Code -->
-    <!-- Signals Gateway Pixel Code -->
-<!--   <script>
-  !function(a,h,e,v,n,t,s)
-    {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=h.createElement(e);t.async=!0;
-    t.src=v;s=h.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'http://localhost:8080/sdk/6837955319335129376/events.js');
-    cbq('setHost', 'http://localhost:8080/');
-    cbq('init', '6837955319335129376');
-    cbq('track', 'PageView');
-  </script> -->
-    <!-- End Signals Gateway Pixel Code -->
-<!-- <script>
-    var __cbSdkHost = "http://localhost:8080/";
-    var __cbSdkSettings={'cbq':{destinations:[{name:"cloudbridge"},],
-    "host":__cbSdkHost,"globalVar":"cbq",}};
-    !function(a,h,e,v,n,t,s)
-      {if(a.cbq)return;n=a.cbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!a._cbq)a._cbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=h.createElement(e);t.async=!0;
-      t.src=v;s=h.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      "http://localhost:8080/"+'sdk/capig-events.js');
-    cbq('init', "413430398757880272");
-    cbq('loadConfig', "413430398757880272");
-    cbq('track', 'PageView');
-    </script> -->
-<!-- End 1P Pixel Code -->
 <!-- Meta Pixel Code -->
-<script>
+<!-- <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -63,7 +16,7 @@ fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1617762062345868&ev=PageView&noscript=1"
-/></noscript>
+/></noscript> -->
 <!-- End Meta Pixel Code -->
     <style>
       body {
@@ -134,4 +87,33 @@ document.getElementById('customEventButton').addEventListener('click', function(
   fbq('track', customEventName);
 }, false);
   </script>
+  <iframe srcdoc="
+  <html>
+    <head>
+      <!-- Facebook Pixel Code -->
+      <script>
+        <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1035691445128119');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1035691445128119&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+      </script>
+    </head>
+    <body>
+      <h1>This is iframe content</h1>
+    </body>
+  </html>
+" width="600" height="400"></iframe>
 </html>
