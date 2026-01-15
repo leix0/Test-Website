@@ -70,7 +70,8 @@ li {
         <li><button id="checkoutButton" type="button">Buy now</button></li>
         <li><button id="leadButton" type="button">Lead</button></li>
         <!-- <li><button id="registrationButton" type="button">Registration</button></li> -->
-        <li><button id="addToCartButton" type="button">Add to Cart</button></li>
+        <li><button id="addToCartButton" type="button">Add to Cart with parameters</button></li>
+        <li><button id="addToCartCustomizedButton" type="button">Add to Cart Customized</button></li>
         <li><button id="estButton" type="button">Check Out</button> 
           item value: $<span>99.99</span> | SKU: <span>12345678</span>
         </li>
@@ -85,11 +86,19 @@ li {
       fbq('track', 'Purchase', {currence: "USD", value: -10.00}, '');
 }, false);
 
-document.getElementById('addToCartButton').addEventListener('click', function() {
+document.getElementById('addToCartCustomizedButton').addEventListener('click', function() {
   // cbq('track', 'AddToCart');
   fbq('track', 'Add To Cart Customized');
 }, false);
 
+  document.getElementById('addToCartCustomizedButton').addEventListener('click', function() {
+  // cbq('track', 'AddToCart');
+  fbq('track', 'Add To Cart', {
+    value: 149.99,
+    currency: 'USD'
+  });
+}, false);
+  
 // document.getElementById('leadButton').addEventListener('click', function() {
 //   cbq('track', 'Lead');
 //   fbq('track', 'Lead');
