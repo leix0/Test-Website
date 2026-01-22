@@ -83,7 +83,7 @@ li {
   <!-- Buttons tracking -->
 <script>
     document.getElementById('addToWishlistButton').addEventListener('click', function() {
-      fbq('track', '', {currence: "USD", value: -10.00}, '');
+      fbq('', 'AddToWishlist', {currence: "USD", value: -10.00}, '');
 }, false);
 
 document.getElementById('addToCartCustomizedButton').addEventListener('click', function() {
