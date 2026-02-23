@@ -89,7 +89,7 @@ li {
 
 document.getElementById('addToCartCustomizedButton').addEventListener('click', function() {
   // cbq('track', 'AddToCart');
-  fbq('track', 'AddToCart Customized', {
+  fbq('trackCustom', 'AddToCart Customized', {
     value: '$149.99',
     currency: 'USD'
   });
